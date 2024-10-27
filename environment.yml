@@ -1,0 +1,19 @@
+#conda env create --file environment.yml
+name: gpt2
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip=23.0.1
+  - numpy
+  - pip:
+    - torch
+    - torchvision
+    - torchaudio
+    - transformers
+    - datasets
+    - tokenizers
+    - wandb
+    - tqdm
+    - tiktoken
