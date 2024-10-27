@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 30,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 31,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 32,
+      "content": "[EOS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": {
+    "type": "Sequence",
+    "normalizers": [
+      {
+        "type": "NFD"
+      },
+      {
+        "type": "StripAccents"
+      }
+    ]
+  },
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "decoder": {
+    "type": "WordPiece",
+    "prefix": "##",
+    "cleanup": true
+  },
+  "model": {
+    "type": "WordLevel",
+    "vocab": {
+      "House": 0,
+      "Commute": 1,
+      "Office": 2,
+      "Store_Daily": 3,
+      "Go_School": 4,
+      "School": 5,
+      "Back_Home": 6,
+      "Shopping_Daily": 7,
+      "Shopping_Nondaily": 8,
+      "Store_Nondaily": 9,
+      "Go_Eat": 10,
+      "Socializing": 11,
+      "Go_Recreational_Facility": 12,
+      "Pickup_Drop_Off": 13,
+      "Go_Sightseeing": 14,
+      "Tourist_Spot": 15,
+      "Private_Movement": 16,
+      "Private_Space": 17,
+      "Delivering": 18,
+      "Business_Place": 19,
+      "Attend_Meeting": 20,
+      "Go_Occupation": 21,
+      "Go_Agricultural_Work": 22,
+      "Natural_Area": 23,
+      "Go_Other_Business": 24,
+      "Go_Exercise": 25,
+      "Pitch": 26,
+      "Volunteering": 27,
+      "Public_Space": 28,
+      "Welcoming": 29,
+      "[UNK]": 30,
+      "[PAD]": 31,
+      "[EOS]": 32
+    },
+    "unk_token": "[UNK]"
+  }
+}
